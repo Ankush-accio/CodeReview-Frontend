@@ -29,7 +29,7 @@ console.log(addNumbers(3, 5));
     setLoading(true);
     setReview("");    
     try {
-      const response = await axios.post('http://localhost:3000/ai/get-review', { code });
+      const response = await axios.post('https://codereview-backend-2.onrender.com/ai/get-review', { code });
       setReview(response.data);
     } catch (error) {
       console.error(error);
